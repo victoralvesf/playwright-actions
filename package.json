@@ -7,8 +7,10 @@
     "test": "e2e"
   },
   "scripts": {
-    "test": "playwright test",
-    "open": "playwright test --ui"
+    "test": "playwright test --project=chromium",
+    "test:ci": "playwright test",
+    "open": "playwright test --ui",
+    "report": "playwright show-report"
   },
   "author": "Fernando Papito",
   "license": "MIT",
