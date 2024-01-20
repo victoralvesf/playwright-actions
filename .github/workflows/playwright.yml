@@ -24,7 +24,7 @@ jobs:
       run: pnpm exec playwright install --with-deps
       
     - name: Run E2E Tests
-      run: pnpm exec playwright test
+      run: pnpm run test:ci
 
     - name: Publish Report
       uses: actions/upload-artifact@v3
