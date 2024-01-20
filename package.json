@@ -4,9 +4,12 @@
   "description": "Projeto de testes de login com Playwright",
   "main": "index.js",
   "directories": {
-    "test": "tests"
+    "test": "e2e"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "open": "playwright test --ui"
+  },
   "author": "Fernando Papito",
   "license": "MIT",
   "devDependencies": {
